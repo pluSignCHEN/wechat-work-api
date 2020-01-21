@@ -184,7 +184,7 @@ router.get('/media', async ctx => { //..转发下载文件请求
 })
 
 
-router.post('/media', upload.array('files'), async (ctx: any) => { //..转发上传接口，formData的键值需要注意设置为 files
+router.post('/media', upload.array('files'), async ctx => { //..转发上传接口，formData的键值需要注意设置为 files
   const files = ctx.request.files
   let promises: ajax.RequestPromise < any > [] = []
   for (let i in files) {

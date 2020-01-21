@@ -16,7 +16,7 @@ import  {
  * @param {ParameterizedContext} ctx  context
  * @param {number} code 消息响应码
  */
-function handleRep(rep: any, ctx: ParameterizedContext<any, IRouterParamContext<any, {}>>, code: number): void {
+function handleRep(rep: any, ctx: ParameterizedContext<any, IRouterParamContext<any, any>>, code: number): void {
   if (rep.errcode === 0) {
     ctx.body = rep
   } else {

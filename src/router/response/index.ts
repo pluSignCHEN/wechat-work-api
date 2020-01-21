@@ -4,7 +4,7 @@
 
 import Router from 'koa-router'
 import xml2js from 'xml2js'
-import wxcrypto from '../../utils/crypt'
+import wxcrypto from '../../utils/crypto'
 import {addApproval} from '../../db/approval'
 
 const xmlParser = xml2js.parseString;
