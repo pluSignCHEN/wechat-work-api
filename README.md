@@ -14,6 +14,8 @@
 
 ####  命令
 
+- npm install -g nodemon ts-node webpack webpack-cli 全局安装启动和打包依赖
+- npm install   安装项目依赖
 - npm run dev   启动服务
 - npm run build 打包
 
